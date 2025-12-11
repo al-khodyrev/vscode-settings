@@ -1,0 +1,75 @@
+{
+    // Color Scheme & Appearance
+    "workbench.colorTheme": "Aura Dracula Spirit (Synthwave)",
+
+    // Window Title Bar
+    "window.titleBarStyle": "custom",
+    "workbench.layoutControl.enabled": false,
+    "chat.commandCenter.enabled": false,
+
+    // Sidebar
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "hidden",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.indent": 14,
+    "explorer.compactFolders": false,
+    "material-icon-theme.hidesExplorerArrows": true,
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.tree.renderIndentGuides": "none",
+    "explorer.enableDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "git.decorations.enabled": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.vscode": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/coverage": true
+    },
+
+    // Status Bar
+    "workbench.statusBar.visible": true,
+
+    // Editor
+    "workbench.editor.labelFormat": "medium",
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": "single",
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "editor.minimap.enabled": false,
+
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    
+    "editor.lineHeight": 1.8,
+    "editor.links": false,
+    "editor.codeLens": false,
+
+    "editor.stickyScroll.enabled": false,
+    "editor.detectIndentation": false,
+    "editor.showFoldingControls": "never",
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "none",   
+    "editor.guides.highlightActiveIndentation": false,
+    
+    //"editor.parameterHints.enabled": false,
+    //"editor.lightBulb.enabled": "off",
+    //"editor.hover.enabled": false,
+    //"files.trimTrailingWhitespace": true,
+    //"files.insertFinalNewLine": true, 
+
+   // Custom Styles
+    "custom-ui-style.stylesheet": {
+        ".notification-toast": "box-shadow: none !important",
+        ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+        ".quick-input-widget": "top: 30vh !important",
+        ".editor-widget.find-widget": "box-shadow: none; border-radius: 6px",
+        ".sidebar .title-label": "padding: 0 !important",
+        ".sidebar": "border: none !important",
+        ".sidebar:active": "border: none !important",
+        ".title-actions": "display: none !important"
+    }
+}
+
