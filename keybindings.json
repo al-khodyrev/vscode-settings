@@ -1,16 +1,25 @@
 [
-    // Open Explorer
-    {"key": "shift+cmd+e", "command": "workbench.view.explorer"},
-    // Open Outline
-    {"key": "shift+cmd+o", "command": "outline.open"},
-    // Open Git
-    {"key": "shift+cmd+g", "command": "workbench.view.scm"},
-    // Open Terminal
-    {"key": "shift+cmd+t", "command": "workbench.action.togglePanel"},
-    // Open Recent
-    {"key": "cmd+r", "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"},
-    // Code Navigation
-    {"key": "cmd+[", "command": "workbench.action.navigateBack"},
-    {"key": "cmd+]", "command": "workbench.action.navigateForward"}
-]
+    {"key": "cmd+shift+e", "when": "!explorerViewletVisible", "command": "workbench.view.explorer"},
+    {"key": "cmd+shift+e", "when": "explorerViewletVisible", "command": "workbench.action.closeSidebar"},
 
+    {"key": "cmd+shift+o", "when": "!view.outline.visible", "command": "outline.focus"},
+    {"key": "cmd+shift+o", "when": "view.outline.visible", "command": "workbench.action.closeSidebar"},
+
+    {"key": "cmd+shift+g", "when": "!view.workbench.scm.visible", "command": "workbench.view.scm"},
+    {"key": "cmd+shift+g", "when": "view.workbench.scm.visible", "command": "workbench.action.closeSidebar"},
+
+    {"key": "cmd+shift+t", "command": "workbench.action.togglePanel"},
+    
+    {"key": "cmd+r", "when": "!inQuickOpen", "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"},
+    {"key": "cmd+r", "when": "inQuickOpen", "command": "workbench.action.quickOpenNavigateNext"},
+    {"key": "cmd+shift+r", "when": "inQuickOpen", "command": "workbench.action.quickOpenNavigatePrevious"},
+
+    {"key": "cmd+[", "command": "workbench.action.navigateBack"},
+    {"key": "cmd+]", "command": "workbench.action.navigateForward"},
+
+    {"key": "cmd+y", "command": "editor.action.goToDeclaration"},
+    {"key": "cmd+shift+y", "command": "editor.action.goToTypeDefinition"},
+    
+    {"key": "cmd+u", "when": "!view.references-view.tree.visible", "command": "references-view.findReferences"},
+    {"key": "cmd+u", "when": "view.references-view.tree.visible", "command": "workbench.action.closeSidebar"}
+]
